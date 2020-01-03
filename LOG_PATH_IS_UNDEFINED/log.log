@@ -1,0 +1,65 @@
+03-01-2020 20:37:51.803 [main] INFO  Applicatiion.class.main - Starting the application...
+03-01-2020 20:37:58.573 [main] ERROR o.s.boot.SpringApplication.reportFailure - Application run failed
+java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.rolling.RollingFileAppender[SAVE-TO-FILE] - 'File' option has the same value "LOG_PATH_IS_UNDEFINED/log.log" as that given for appender [FILE] defined earlier.
+ERROR in ch.qos.logback.core.rolling.RollingFileAppender[SAVE-TO-FILE] - Collisions detected with FileAppender/RollingAppender instances defined earlier. Aborting.
+ERROR in ch.qos.logback.core.rolling.RollingFileAppender[SAVE-TO-FILE] - For more information, please visit http://logback.qos.ch/codes.html#earlier_fa_collision
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:169)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:222)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:73)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:118)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:313)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:288)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:76)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:53)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:345)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.example.Application.main(Application.java:16)
+03-01-2020 20:39:39.915 [main] INFO  Applicatiion.class.main - Starting the application...
+03-01-2020 20:39:41.257 [main] INFO  org.example.Application.logStarting - Starting Application on DESKTOP-UTGGGGG with PID 3116 (C:\Users\baril\IdeaProjects\spring-mvc\target\classes started by baril in C:\Users\baril\IdeaProjects\spring-mvc)
+03-01-2020 20:39:41.257 [main] INFO  org.example.Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+03-01-2020 20:39:46.943 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+03-01-2020 20:39:47.037 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+03-01-2020 20:39:47.037 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+03-01-2020 20:39:47.037 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.29]
+03-01-2020 20:39:47.396 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+03-01-2020 20:39:47.396 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 5815 ms
+03-01-2020 20:39:48.287 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+03-01-2020 20:39:48.849 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+03-01-2020 20:39:48.927 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+03-01-2020 20:39:48.958 [main] INFO  org.example.Application.logStarted - Started Application in 8.736 seconds (JVM running for 10.188)
+03-01-2020 20:40:24.258 [main] INFO  Applicatiion.class.main - Starting the application...
+03-01-2020 20:40:24.758 [main] INFO  org.example.Application.logStarting - Starting Application on DESKTOP-UTGGGGG with PID 9260 (C:\Users\baril\IdeaProjects\spring-mvc\target\classes started by baril in C:\Users\baril\IdeaProjects\spring-mvc)
+03-01-2020 20:40:24.758 [main] INFO  org.example.Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+03-01-2020 20:40:25.821 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+03-01-2020 20:40:25.836 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+03-01-2020 20:40:25.836 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+03-01-2020 20:40:25.836 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.29]
+03-01-2020 20:40:25.899 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+03-01-2020 20:40:25.899 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1078 ms
+03-01-2020 20:40:26.033 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+03-01-2020 20:40:26.158 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+03-01-2020 20:40:26.186 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+03-01-2020 20:40:26.190 [main] INFO  org.example.Application.logStarted - Started Application in 1.822 seconds (JVM running for 3.334)
+03-01-2020 20:41:59.869 [main] INFO  Applicatiion.class.main - Starting the application...
+03-01-2020 20:42:00.412 [main] INFO  org.example.Application.logStarting - Starting Application on DESKTOP-UTGGGGG with PID 2768 (C:\Users\baril\IdeaProjects\spring-mvc\target\classes started by baril in C:\Users\baril\IdeaProjects\spring-mvc)
+03-01-2020 20:42:00.412 [main] INFO  org.example.Application.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+03-01-2020 20:42:01.350 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+03-01-2020 20:42:01.365 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+03-01-2020 20:42:01.365 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+03-01-2020 20:42:01.365 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.29]
+03-01-2020 20:42:01.428 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+03-01-2020 20:42:01.428 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 969 ms
+03-01-2020 20:42:01.553 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+03-01-2020 20:42:01.693 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+03-01-2020 20:42:01.726 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+03-01-2020 20:42:01.726 [main] INFO  org.example.Application.logStarted - Started Application in 1.739 seconds (JVM running for 2.945)
